@@ -1,14 +1,14 @@
 apply plugin: 'com.android.application'
 
 dependencies {
-    compile "com.android.support:support-v4:23.1.1"
-    compile "com.android.support:gridlayout-v7:23.1.1"
-    compile "com.android.support:cardview-v7:23.1.1"
-    compile 'com.android.support:appcompat-v7:23.1.1'
-    compile 'com.android.support:design:23.1.1'
+    implementation 'com.android.support:support-v4:25.3.1'
+    implementation 'com.android.support:gridlayout-v7:25.3.1'
+    implementation 'com.android.support:cardview-v7:25.3.1'
+    implementation 'com.android.support:appcompat-v7:25.3.1'
+    implementation 'com.android.support:design:25.3.1'
 
-    compile fileTree(dir: 'libs', include: '*.jar')
-    compile project(':Libraries:DroidPlugin')
+    implementation fileTree(dir: 'libs', include: '*.jar')
+    implementation project(':Libraries:DroidPlugin')
 }
 
 
@@ -22,8 +22,8 @@ android {
         }
     }
 
-    compileSdkVersion rootProject.ext.compileSdkVersion
-    buildToolsVersion rootProject.ext.buildToolsVersion
+    compileSdkVersion 33
+    buildToolsVersion '29.0.2'
 
     sourceSets {
         main {
